@@ -1,1 +1,18 @@
-# School_District_Analysis
+# Comparison of Standardised Test Scores for Reading and Math Between Charter and Public High Schools
+
+## (i) PURPOSE
+Although though individual states have standards and expectations for education, variation in teaching styles, socio economic background of the students in different regions and school funding models make it difficult to determine if students are actually being educated to those standards and meeting those expectations.  Of particular interest are "charter schools" - schools that receive public funding but operate independently and are unburdened by many of the rules and regulations that impact Public Schools. As such, and in the interests of maintaining academic integrity, many states and school districts employ standardised testing in key subjects, such as math and reading, so as to be able to directly compare student learning for each grade level within both Charter and Public schools within a specified administrative region.  The purpose of this analysis was to examine the standardised test scores for all schools within a specified district so as to identify any trends in student performance that may impact or guide the future allocation of economic resources.
+
+## (ii) RESULTS
+Using a Jupyter Notebook as a medium for Python, it was possible to clean the data set.  The first step of cleaning was the removal of null and duplicate values which may have had an adverse effect on analysis.  In this case a total of 2950 "null" (or "missing") values and 1836 duplicated rows were purged from the data set.  The second of cleaning was identifying and altering or removing any "problematic" or "messy" data types which may interfere with analysis.  In this case, the "grade" column was identified as "object" data type, due to the inclusion of "th" with all entries in the column, which would have limited the mathematical analysis that could be performed using that column.  As such, all entries in the "grade" column were altered, to remove the "th", and redesignated as "integer" data type.
+
+Once cleaned, and continuing to use a Jupyter Notebook as an interface for Python, it was possible to use the data set to generate summary statistics (mean, standard deviation, quartiles, etc.) for all schools (see Figure 1), to examine performance at a specified grade level across all schools, isolate individual test results meeting specified criteria and to examine performance of all students enrolled at a specified high school.  
+
+Figure 1
+
+Moreover, using the "groupby" feature in conjunction with the "sort_values", "count()" and "mean()" operations, it was possible to directly compare Charter Schools to Public Schools in terms of their budgets (see Figure 2) and the average standardised test scores both for the school types as whole (see Figure 3) and by grade level within the school types.
+
+Figure 2 and 3
+
+## (iii) Analysis
+Although the results demonstrate a difference in the standardised test scores for Charter Schools as compared to Public Schools,  the difference, as compared to the standard deviation in the scores for the population as a whole (15.2 and 15.8 respectively), could easily be attributed to sampling error.  That said, and given the nominal difference in average annual school budgets within the district, $872625.7/year for Charter Schools and $911195.6/year for Public schools, it would seem that continued public funding of the Charter Schools is justified.  However, given the magnitude of public funds involved, the importance of upholding academic standards and ensuring quality education for all students, further analysis should be conducted to examine the number of students enrolled at each school type as compared to the operating costs for each school type - i.e determine the average $/student.year of public funds being spent  at each school type - before formally committing to or continuing with any funding model.
