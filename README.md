@@ -8,7 +8,7 @@ Using a Jupyter Notebook as a medium for Python, it was possible to clean the da
 
 Once cleaned, and continuing to use a Jupyter Notebook as an interface for Python, it was possible to use the data set to generate summary statistics (mean, standard deviation, quartiles, etc.) for all schools (see Figure 1), to examine performance at a specified grade level across all schools, isolate individual test results meeting specified criteria and to examine performance of all students enrolled at a specified high school.  
 
-Figure 1
+![](https://github.com/Scruffy-Bearie/School_District_Analysis/blob/main/Student_Data_Challenge_Starter_Code/Unsolved/Figure1.png)
 
 Moreover, using the "groupby" feature in conjunction with the "sort_values", "count()" and "mean()" operations, it was possible to directly compare Charter Schools to Public Schools in terms of their budgets (see Figure 2) and the average standardised test scores both for the school types as whole (see Figure 3) and by grade level within the school types.
 
